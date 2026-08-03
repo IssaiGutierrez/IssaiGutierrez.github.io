@@ -1,0 +1,73 @@
+
+
+.outer-container {
+  background-image: url('Assets/starryNight.gif'); 
+
+  border: 8px ridge silver; 
+  padding: 40px; 
+  margin: 50px;
+
+  width: auto;
+  max-width: 800px;
+
+  color: white;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* For dealing with menu tab. */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-width: 800px;
+}
+ul li {
+    float: left;
+}
+ul li a{
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+}
+ul li a:hover {
+    background-color: white;
+}
+
+
+/* For creating grid of photos.*/
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+
+    gap: 15px;                            
+    max-width: 900px;     
+                    
+    margin: 0 auto;                      
+    padding: 15px;
+}
+
+/* Keeps image sizing uniform and un-stretched */
+.photo-container img {
+    width: 100%;
+    height: 75%;
+
+    object-fit: cover;                    
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;                 
+}
+
+/*For images with text.*/
+.floating-image {
+    float: left;
+    margin: 0 auto;
+    max-width: 200px;
+    border: 3px ridge silver;
+}
