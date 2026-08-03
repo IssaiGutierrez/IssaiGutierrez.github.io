@@ -8,7 +8,7 @@
   margin: 50px;
 
   width: auto;
-  max-width: 800px;
+  max-width: auto;
 
   color: white;
 }
@@ -53,8 +53,6 @@ ul li a:hover {
     margin: 0 auto;                      
     padding: 15px;
 }
-
-/* Keeps image sizing uniform and un-stretched */
 .photo-container img {
     width: 100%;
     height: 75%;
@@ -65,7 +63,12 @@ ul li a:hover {
 }
 
 /*For images with text.*/
-.floating-image {
+.floating-image-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.floating-image-container img{
     float: left;
     margin: 0 auto;
     max-width: 200px;
